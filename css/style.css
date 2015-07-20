@@ -9,7 +9,7 @@
 	position: absolute;
 	padding: 0 20px;
 	z-index: 2;
-	opacity: 1 !important;
+	opacity: 1;
 	-webkit-transition: opacity 0.3s ease-in;
 	transition: opacity 0.3s ease-in;
 	-moz-user-select: none;
@@ -97,12 +97,12 @@ margin-left: -10px;
 
 .player .play-pause {
 	display: inline-block;
-	  text-shadow: 0 0 0 #fff;
+	  text-shadow: 0 0 0 #000;
 	  color: rgba(255,255,255,0.8);
 	  width: 17%;
 	  height: 17%;
 	  cursor: pointer;
-	  background-color: rgba(255,255,255,0.5);
+	/*  background-color: rgba(255,255,255,0.5); */
 	  position: absolute;
 	  top: 0;
 	  bottom: 0;
@@ -112,13 +112,15 @@ margin-left: -10px;
 	  text-align: center;
 }
 
+ .fa-play-circle-o {opacity:0.9;}
+
 .player .play, .player .pause-button {
-	/* -webkit-transition: all 0.2s ease-out;*/
+	/*-webkit-transition: all 0.2s ease-out;*/
 	font-size: 4em;
 }
 
 .player .play .pause-button, .player .pause .play-button {
-	display: none;
+		display: none;
 		font-size: 4em;
 }
 
@@ -130,11 +132,11 @@ margin-left: -10px;
 }
 
 .player .pause-button span {
-	background: #fff;
+	background-color: rgba(255,255,255,0.5);
 	width: 8px;
 	height: 24px;
 	float: left;
-	display: block;	font-size: 4em;
+	font-size: 4em;
 }
 
 .player .pause-button span:first-of-type {
@@ -157,11 +159,11 @@ margin-left: -10px;
 	color: #444;
 }
 .player .play:hover {
-	text-shadow: 0 0 5px #fff;
+	text-shadow: 0 0 5px #000;
 }
 
 .player .play:active, .pause-button:active span {
-	text-shadow: 0 0 7px #fff;
+	text-shadow: 0 0 7px #000;
 		font-size: 4em;
 }
 
@@ -253,11 +255,13 @@ margin-left: -10px;
 
 
 .player .fullscreen {
-	/* width: 12%; */
+	width: 12%;
   cursor: pointer;
   float: right;
   height: 100%;
-  margin-top: -5px;
+  margin-top: 10px;
+  margin-right: 5px;
+  font-size: 1.2em;
 }
 
 .player .fullscreen a {

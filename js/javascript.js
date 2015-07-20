@@ -60,8 +60,10 @@
 				         + '<span> </span>'
 				       + '</div>'
 				     + '</div>'
-				     + '<div class="fullscreen"> '
-				       + '<a href="#"> </a>'
+
+
+						 + '<div class="fullscreen"> '
+				     + '<i class="fa fa-expand fa-5 fullscreen"></i>'
 				     + '</div>'
 
 						 + '<div class="progress">'
