@@ -61,8 +61,6 @@
 	background: -ms-linear-gradient(left, #ff3c44 0%,#ff6090 100%); /* IE10+ */
 	background: linear-gradient(to right, #ff3c44 0%,#ff6090 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3c44', endColorstr='#ff6090',GradientType=1 ); /* IE6-9 */
-
-	/*box-shadow: inset -30px 0px 69px -20px #89f6f5; */
 	border-radius: 5px;
 	height: 100%;
 	position: relative;
@@ -99,25 +97,24 @@ margin-left: -10px;
 
 .player .play-pause {
 	display: inline-block;
-  text-shadow: 0 0 0 #fff;
-  color: rgba(255,255,255,0.8);
-  width: 17%;
-  height: 17%;
-  cursor: pointer;
-  background-color: rgba(255,255,255,0.5);
-  position: absolute;
-  margin: 0 auto;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+	  text-shadow: 0 0 0 #fff;
+	  color: rgba(255,255,255,0.8);
+	  width: 17%;
+	  height: 17%;
+	  cursor: pointer;
+	  background-color: rgba(255,255,255,0.5);
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  margin: auto;
+	  text-align: center;
 }
 
 .player .play, .player .pause-button {
-	-webkit-transition: all 0.2s ease-out;
-		font-size: 4em;
-
+	/* -webkit-transition: all 0.2s ease-out;*/
+	font-size: 4em;
 }
 
 .player .play .pause-button, .player .pause .play-button {
@@ -126,14 +123,10 @@ margin-left: -10px;
 }
 
 .player .pause-button {
-	padding: 5px 2px;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	height: 34px;
-	font-size: 4em !important;
-	  padding: 36px 2px 0px 57px !important;
-
-		padding: 36px 0px 0px 9px;
+	font-size: 6em;
+	position: absolute;
+	left: 67px;
+	top: 28px;
 }
 
 .player .pause-button span {
@@ -148,7 +141,9 @@ margin-left: -10px;
 	margin: 0 4px 0 0;
 		font-size: 4em;
 }
-
+.player .play .pause-button, .player .pause i {
+	display: none;
+}
 .player .time {
 	color: #eee;
 	  font-weight: bold;

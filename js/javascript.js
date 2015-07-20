@@ -36,15 +36,17 @@
 				$( '<div class="player">'
 				     + '<div class="play-pause play">'
 				       + '<i class="fa fa-play-circle-o"></i>'
-				       + '<div class="pause-button">'
+
+							  //+ '<i class="fa fa-pause pause-button"></i>'
+
+							 + '<div class="pause-button">'
 				         + '<span> </span>'
 					         + '<span> </span>'
 				       + '</div>'
+
 				     + '</div>'
 
-
-
-				     + '<div class="volume">'
+   			 + '<div class="volume">'
 				       + '<div class="volume-holder">'
 				         + '<div class="volume-bar-holder">'
 				           + '<div class="volume-bar">'
