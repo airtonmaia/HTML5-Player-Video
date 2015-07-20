@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML5 Video Player | V1</title>
+
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+
+  <style media="screen">
+  body {
+    padding-top: 50px;
+      background-color: #FF6090;
+      font-family: 'Roboto', sans-serif;
+      color: #fff
+  }
+  .starter-template {
+    padding: 40px 15px;
+
+  }
+  .video {width: 100% !important;  }
+  #meuVideo {margin-bottom: -10px !important;}
+  .titulo {color: #fff; font-weight: 100;text-align: center;}
+  </style>
+
+
+  <script src='js/jquery.js'></script>
+  <script src='js/javascript.js'></script>
+
+  <script type='text/javascript'>
+
+  $(document).ready(function() {
+  	$('video').videoPlayer({
+  		'playerWidth' : 1,
+  		'videoClass' : 'video'
+  	});
+  });
+
+  </script>
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar">rty</span>
+              <span class="icon-bar">tyr></span>
+              <span class="icon-bar">ytyt</span>
+            </button>
+            <a class="navbar-brand" href="#">Zuly</a>
+          </div>
+          <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="doc.html">Documentação</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+
+      <div class="container">
+
+         <div class="starter-template">
+           <h1 class="titulo">New Video Player HTML5 </h1> </br></br>
+
+           <div class="row">
+ <div class="col-xs-1">
+ </div>
+             <div class="col-xs-10">
+
+
+
+
+             <video class="meuvideo"  style="width:100% !important; margin-bottom:-10px"   width="100%" height="auto" poster="https://cdn.plyr.io/static/poster.jpg">
+               <source src="https://cdn.selz.com/plyr/1.0/movie.mp4" type='video/mp4' />
+               <source src="https://cdn.selz.com/plyr/1.0/movie.webm" type='video/webm' />
+               <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+               <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track>
+               <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track>
+
+             </video>
+
+
+           </div>
+           <div class="col-xs-1">
+           </div>
+           </div> <!-- row -->
+
+
+
+         </div>
+
+       </div><!-- /.container -->
+
+
+<i class="fa fa-play-circle-o"></i>
+
+</body>
+</html>

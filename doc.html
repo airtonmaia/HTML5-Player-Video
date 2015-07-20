@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML5 Video Player</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+
+  <style media="screen">
+  body {
+    padding-top: 50px;
+      background-color: #FF6090;
+      font-family: 'Roboto', sans-serif;
+      color: #fff
+  }
+  .starter-template {
+    padding: 40px 15px;
+
+  }
+  .video {width: 100% !important}
+
+  .titulo {color: #fff; font-weight: 100;text-align: center;}
+
+
+
+  </style>
+
+
+  <script src='js/jquery.js'></script>
+  <s<script src='js/javascript.js'></script>
+  <s<script src='js/bootstrap.min.js'></script>
+
+  <script type='text/javascript'>
+
+  $(document).ready(function() {
+  	$('video').videoPlayer({
+  		'playerWidth' : 1,
+  		'videoClass' : 'video'
+  	});
+  });
+
+
+  </script>
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Zuly</a>
+          </div>
+          <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+
+      <div class="container">
+
+         <div class="starter-template">
+           <h1 class="titulo">New Video Player HTML5 </h1> </br>
+
+
+
+           <div class="row">
+
+             <div class="col-xs-12">
+
+
+
+
+
+  <div class="sixteen columns">
+  <h3>Vamos começar</h3>
+  <p>Primeiro de tudo vamos nos acostumar com a tag de vídeo HTML5. Para criar um novo elemento de vídeo é só usar a tag de vídeo. É melhor usar vários tipos de vídeo, uma vez que nem todos os vídeos são suportados por todos os navegadores. Usando apenas .webm e .mp4 vai cobrir principalmente a cada tipo de vídeo embora. Miro fornece um método simples para converter arquivos para .webm.</p>
+</br>
+    <pre>
+      <code data-language="html">
+        <video id="our-video" width="600" height="400" controls>
+          <source src="movie.mp4" type="video/mp4">
+          <source src="movie-hd.mp4" type="video/mp4">
+      </video>
+      </code>
+    </pre>
+  </div>
+
+            </div>
+
+           </div>
+
+         </div>
+
+       </div><!-- /.container -->
+
+       <script src="http://forecastfont.iconvau.lt/js/rainbow/rainbow.min.js"></script>
+       <script src="http://forecastfont.iconvau.lt/js/rainbow/language/html.js"></script>
+       <script src="http://forecastfont.iconvau.lt/js/rainbow/language/css.js"></script>
+
+
+</body>
+</html>
